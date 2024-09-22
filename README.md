@@ -50,11 +50,11 @@ python signal-backup-shrink.py [directory]
 
 ```
 
-Windows
+Windows:
 
 ```batch
 
-source setup.sh
+source setup.bat
 
 python signal-backup-shrink.py [directory]
 
