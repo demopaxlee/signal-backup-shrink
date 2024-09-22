@@ -54,7 +54,7 @@ Windows:
 
 ```batch
 
-source setup.bat
+call setup.bat
 
 python signal-backup-shrink.py [directory]
 
