@@ -14,6 +14,14 @@ Using this method, I was able to reduce my Signal backup size by about 80% (from
 + [filetype](https://pypi.org/project/filetype)
 + [pillow](https://pypi.org/project/Pillow)
 
+## Setup
+
+```bash
+
+source setup.sh
+
+```
+
 ## Usage
 
 1. Dump the unencrypted backup components to disk:
@@ -22,7 +30,13 @@ Using this method, I was able to reduce my Signal backup size by about 80% (from
 
 2. Process message attachments:
 
-`signal-backup-shrink.py [directory]`
+```bash
+
+source setup.sh
+
+python signal-backup-shrink.py [directory]
+
+```
 
 3. Re-encrypt backup with processed attachments:
 
@@ -30,7 +44,7 @@ Using this method, I was able to reduce my Signal backup size by about 80% (from
 
 ## Limitations
 
-Currently, `signalbackup-tools` [only supports replacing attachments with images](https://github.com/bepaald/signalbackup-tools/issues/68#issuecomment-1138812152). Hence, it is not possible to 
+Currently, `signalbackup-tools` [only supports replacing attachments with images](https://github.com/bepaald/signalbackup-tools/issues/68#issuecomment-1138812152). Hence, it is not possible to
 
 + process audio files (such as voice recordings)
 + replace gifs or videos with smaller versions
