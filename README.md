@@ -16,9 +16,19 @@ Using this method, I was able to reduce my Signal backup size by about 80% (from
 
 ## Setup
 
+### Linux
+
 ```bash
 
 source setup.sh
+
+```
+
+### Windows
+
+```bat
+
+call setup.bat
 
 ```
 
@@ -30,7 +40,19 @@ source setup.sh
 
 2. Process message attachments:
 
+Linux:
+
 ```bash
+
+source setup.sh
+
+python signal-backup-shrink.py [directory]
+
+```
+
+Windows
+
+```batch
 
 source setup.sh
 
